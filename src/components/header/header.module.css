@@ -1,0 +1,45 @@
+.container__main {
+    position: absolute;
+    height: 8rem;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    width: min(8rem, 100%);
+    aspect-ratio: 1;
+    padding-left: 2rem;
+
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.phone {
+    position: relative;
+    width: min(2rem, 100%);
+
+    aspect-ratio: 1;
+    margin-right: 2rem;
+    visibility: hidden;
+}
+
+.phone img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+@media (max-width:602px) {
+    .phone {
+        visibility: visible;
+    }
+}
