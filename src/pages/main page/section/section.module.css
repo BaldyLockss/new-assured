@@ -4,6 +4,7 @@
     flex-direction: column;
     background: linear-gradient(180deg, rgb(136, 207, 240), white 40rem);
     border-bottom: 1px solid black;
+    min-height: 98dvh;
 }
 
 .container__main>img {
