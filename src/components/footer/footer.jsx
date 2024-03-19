@@ -62,21 +62,18 @@ const Footer = () => {
         <div className={styles.images}>
           <div className={styles.image__a}>
             <img
-              src="public\images\HMRC.png"
+              src="/images/HMRC.png"
               alt="his majestys customs and revenue logo"
             />
           </div>
           <div className={styles.image__b}>
             <img
-              src="public\images\ICO.png"
+              src="/images/ICO.png"
               alt="information commissioners office logo"
             />
           </div>
           <div className={styles.image__c}>
-            <img
-              src="public\images\PRS.png"
-              alt="property redress scheme logo"
-            />
+            <img src="/images/PRS.png" alt="property redress scheme logo" />
           </div>
         </div>
       </div>
