@@ -6,14 +6,14 @@ const Header = () => {
     <div className={styles.container__main}>
       <div className={styles.logo}>
         <img
-          src="src\assets\svg's\Logo (1).svg"
+          src="/assets/svgs/Logo.svg"
           alt="sketched company logo of a key and house keychain"
         />
       </div>
 
       <div className={styles.phone}>
         <a name="telephone link to assured exchange" href="tel:07504688872">
-          <img src="src\assets\svg's\phone.svg" alt="sketched phone" />
+          <img src="/assets/svgs/phone.svg" alt="sketched phone" />
         </a>
       </div>
     </div>

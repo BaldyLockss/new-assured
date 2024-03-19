@@ -8,13 +8,13 @@ const MainPage = () => {
   return (
     <div className={styles.container__main}>
       <div className={styles.clouds}>
-        <img src="src\assets\svg's\clouds.svg" alt="sketched clouds" />
+        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
+        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
+        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
+        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
       </div>
 
-      <img
-        src="src\assets\svg's\Mainpage.svg"
-        alt="a sketched house background"
-      />
+      <img src="/assets/svgs/Mainpage.svg" alt="a sketched house background" />
       <div className={styles.container__center}>
         <div className={styles.list}>
           <ul>
@@ -22,7 +22,7 @@ const MainPage = () => {
               return (
                 <li key={i}>
                   <img
-                    src="src\assets\svg's\tick.svg"
+                    src="/assets/svgs/tick.svg"
                     alt="sketched tick in a circle"
                   />
                   <p>{item}</p>
@@ -32,10 +32,7 @@ const MainPage = () => {
           </ul>
         </div>
         <div className={styles.card}>
-          <img
-            src="src\assets\svg's\cardbackground.svg"
-            alt="sketch background"
-          />
+          <img src="/assets/svgs/cardbackground.svg" alt="sketch background" />
           <h1>
             Click <span>here</span> for a FREE valuation
           </h1>
