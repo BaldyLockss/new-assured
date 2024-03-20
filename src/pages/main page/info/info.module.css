@@ -1,0 +1,24 @@
+.container__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: rgba(243, 243, 243, 0.425);
+    backdrop-filter: blur(0.4rem);
+}
+
+.text {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.text p {
+    padding: 0.5rem;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}

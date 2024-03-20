@@ -1,0 +1,39 @@
+.container__main {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(180deg, rgb(60, 182, 238), white 40rem);
+    overflow: hidden;
+}
+
+.clouds {
+    position: fixed;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    transform: translateX(-200%);
+    animation: cloudMovement 140s linear infinite;
+}
+
+.clouds img {
+    width: 100%;
+    height: 100%;
+}
+
+.container__main>img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+}
+
+@keyframes cloudMovement {
+    from {
+        tranform: translateX(-200%)
+    }
+
+    to {
+        transform: translateX(0%)
+    }
+}

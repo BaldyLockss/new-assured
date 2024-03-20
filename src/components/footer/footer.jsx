@@ -1,4 +1,7 @@
+//CSS imports
 import styles from "./footer.module.css";
+//REACT imports
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,7 +19,9 @@ const Footer = () => {
             <ul>
               <li>Selling your home</li>
               <li>Cash buyer opportunities</li>
-              <li>FAQ's</li>
+              <Link to="/faq">
+                <li>FAQ's</li>
+              </Link>
             </ul>
           </div>
           <div className={styles.contact}>
@@ -46,14 +51,14 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <div className={styles.icon}>
-                  <img src="/assets/svgs/instagram.svg" alt="instagram logo" />
-                </div>
+                {/* <div className={styles.icon}>
+                  <img src="/assets/svgs/x.svg" alt="x website logo" />
+                </div> */}
               </li>
               <li>
-                <div className={styles.icon}>
-                  <img src="/assets/svgs/x.svg" alt="x website logo" />
-                </div>
+                {/* <div className={styles.icon}>
+                  <img src="/assets/svgs/instagram.svg" alt="instagram logo" />
+                </div> */}
               </li>
             </ul>
           </div>

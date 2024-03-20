@@ -1,6 +1,8 @@
 .container {
+    position: relative;
+    bottom: 0;
     padding: 2rem;
-
+    background-color: rgba(255, 255, 255, 0.856);
 }
 
 .main__section {
@@ -10,7 +12,7 @@
 
 .logo {
     aspect-ratio: 1;
-    width: 8rem;
+    width: 12rem;
 }
 
 .logo img {
@@ -91,6 +93,7 @@ li {
 
 .compliance {
     border-top: 2px solid black;
+    font-size: 0.8rem;
 }
 
 

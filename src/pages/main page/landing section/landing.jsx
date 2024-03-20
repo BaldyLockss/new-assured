@@ -8,14 +8,6 @@ import { LandingList } from "../../../data/data";
 const Landing = () => {
   return (
     <div className={styles.container__main}>
-      <div className={styles.clouds}>
-        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
-        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
-        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
-        <img src="/assets/svgs/clouds.svg" alt="sketched clouds" />
-      </div>
-
-      <img src="/assets/svgs/Mainpage.svg" alt="a sketched house background" />
       <div className={styles.container__center}>
         <div className={styles.list}>
           <ul>
@@ -33,9 +25,17 @@ const Landing = () => {
           </ul>
         </div>
         <div className={styles.card}>
-          <img src="/assets/svgs/cardbackground.svg" alt="sketch background" />
           <h1>
-            Click <span>here</span> for a FREE valuation
+            Click{" "}
+            <span>
+              <a
+                name="link to customer form"
+                href="https://podio.com/webforms/29434708/2417753"
+              >
+                here
+              </a>
+            </span>{" "}
+            for a FREE valuation
           </h1>
         </div>
       </div>

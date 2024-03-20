@@ -1,0 +1,11 @@
+.container__main {
+    position: relative;
+    height: 100dvh;
+    background: linear-gradient(180deg, rgb(60, 182, 238), white 40rem);
+}
+
+.questions {
+    position: relative;
+    top: 16%;
+    background-color: blue;
+}

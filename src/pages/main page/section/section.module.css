@@ -1,161 +1,79 @@
 .container__main {
     position: relative;
+    min-height: 75dvh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, rgb(136, 207, 240), white 40rem);
-    border-bottom: 1px solid black;
-    min-height: 98dvh;
+    padding: 3rem 0;
+}
+
+.container__main h2 {
+    text-align: center;
+    font-size: clamp(3.5rem, 8.9vw, 8rem);
 }
 
 .container__main>img {
-    width: 100%;
-    height: 100%;
     position: absolute;
-    bottom: 0;
-    align-self: center;
-    opacity: 40%;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    opacity: 60%;
+    z-index: -1;
 }
 
-.title {
-    align-self: center;
-    padding: 2rem;
-}
-
-.title h1 {
-    font-size: var(--fs-xl);
-    text-wrap: wrap;
-    text-align: center;
-}
-
-.body {
+.container__cards {
+    position: relative;
+    flex: 1 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    flex: 1 1;
     gap: 2rem;
+    overflow: hidden;
 }
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
 
-.card {
-    position: relative;
-    display: grid;
-    width: min(28rem, 100%);
-    aspect-ratio: 1;
-    padding: 1rem;
-}
 
-.card__img {
-    width: min(12rem, 100%);
-    aspect-ratio: 1;
-    justify-self: center;
-}
-
-.card__img:hover {
-    animation: bounce 1s linear infinite alternate;
-}
-
-.card__img img {
-    height: 100%;
-    width: 100%;
-}
-
-.card__body {
-    display: flex;
-}
-
-.body__list {
-    position: relative;
-    left: 10%;
-    display: grid;
-    height: auto;
-}
-
-.body__list li {
-    display: flex;
-    align-items: center;
-}
-
-.body__list img {
-    width: 2rem;
-    aspect-ratio: 1;
-}
-
-.back__wrapper {
+.container__info {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
+    background-color: white;
+    background-image: url("/images/cardbackground.png");
+    background-position: center;
     transition: all .3s ease;
 }
 
-.card__back {
-    position: relative;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
 
-.card__back img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+.container__info .info {
+    padding: 1rem;
+    opacity: 0;
+    animation: fade-in 0.3s ease 0.5s forwards;
 
 }
 
-.text {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    height: 100%;
-    width: 100%;
+
+.container__footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.text p {
-    position: absolute;
-    place-items: center;
+.container__footer button {
+    padding: 1em 3em;
+    border: 2px solid red;
 }
 
-.btn {
-    width: 100%;
-    height: 4rem;
-}
-
-@media (max-width:801px) {
+@media (max-width:602px) {
     .container__main>img {
         visibility: hidden;
     }
 }
 
-@keyframes bounce {
-    0% {
-        transform: translateY(0.8rem);
+@keyframes fade-in {
+    from {
+        opacity: 0;
     }
 
-    20% {
-        transform: translateY(0);
+    to {
+        opacity: 1;
     }
-
-    40% {
-        transform: translateY(0.6rem);
-    }
-
-    60% {
-        transform: translateY(0);
-    }
-
-    80% {
-        transform: translateY(0.4rem);
-    }
-
-    100% {
-        transform: translateY(0.8rem);
-    }
-
 }
